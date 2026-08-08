@@ -1,0 +1,104 @@
+/**
+320px - Mobile S
+375px - Mobile M
+425px - Mobile L
+768px - Tablet
+1024px - Laptop
+1440px - Laptop L
+2560 - 4K
+*/
+
+/** 392px */
+@media screen and (min-width: 24.5em) {
+  div.tools {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/** 1024px */
+@media screen and (min-width: 64em) {
+  /** HEADER */
+  header {
+    position: sticky;
+    top: 0;
+
+    background-color: var(--base);
+    box-shadow: var(--shadow);
+
+    z-index: 1;
+  }
+
+  header.expanded {
+    margin: 1rem;
+
+    background: none;
+    box-shadow: none;
+  }
+
+  div.header {
+    margin: 0;
+  }
+
+  div.header a:hover,
+  div.header a:focus {
+    border-radius: 0;
+  }
+
+  header.expanded a:hover,
+  header.expanded a:focus {
+    border-radius: 0.5rem;
+  }
+
+  div.nav {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: 7rem;
+  }
+
+  div.nav button {
+    display: none;
+  }
+
+  nav {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  nav.collapsed {
+    display: block;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header li + li {
+    border: none;
+  }
+
+  /* BODY */
+  body {
+    margin: 0;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 8rem;
+  }
+
+  section.landing {
+    min-height: auto;
+  }
+
+  section.tools {
+    max-width: 64rem;
+    margin: auto;
+  }
+
+  div.tools {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

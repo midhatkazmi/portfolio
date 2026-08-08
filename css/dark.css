@@ -1,0 +1,45 @@
+/**
+- BODY
+- HEADER
+- CONTACT PAGE
+*/
+
+/** BODY */
+body.dark {
+  --base: hsl(0, 0%, 10%);
+  --contrast: var(--white);
+  --contrast-900: hsl(0, 0%, 20%);
+  --accent: var(--white);
+  --accent-tint: rgba(255, 255, 255, 10%);
+
+  --shadow: 0 0 0 0.0625rem var(--contrast-900);
+
+  background-color: var(--base);
+  color: var(--contrast);
+}
+
+/** HEADER */
+body.dark div.header button {
+  padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+
+  background-color: var(--blue);
+}
+
+body.dark div.header button:hover,
+body.dark div.header button:focus {
+  background-color: var(--accent);
+}
+
+body.dark div.header button:active {
+  background-color: var(--contrast-900);
+}
+
+body.dark div.nav button:active {
+  box-shadow: 0 0 0 0.0625rem var(--blue);
+}
+
+/** CONTACT PAGE */
+body.dark div.contact a:active,
+body.dark div.contact button:active {
+  box-shadow: 0 0 0 0.0625rem var(--blue);
+}
