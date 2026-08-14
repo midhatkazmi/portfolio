@@ -4,6 +4,7 @@
 - FOOTER
 - MAIN
 - SECTIONS
+  - WORK SECTION
 - HEADINGS
 - PARAGRAPHS
 - HIGHLIGHTS
@@ -227,16 +228,36 @@ section.landing {
   min-height: calc(100vh - var(--header-height));
 }
 
+section.tools {
+  color: var(--accent);
+
+  text-align: center;
+}
+
+section.tools h2 {
+  display: inline-block;
+  padding: 0 1rem;
+
+  background-color: var(--base);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+}
+
 div.tools {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
+  margin: -1.375rem 1rem 1rem 1rem;
+  padding: 1rem;
 
-  color: var(--accent);
+  border: solid 0.0625rem currentColor;
+  border-radius: 1rem;
 
   font-size: 0.75rem;
   font-weight: 500;
-  text-align: center;
 }
 
 section.tools figure {
@@ -248,8 +269,14 @@ section.tools figure {
 
 section.tools svg {
   max-width: 4rem;
+  /* width: 100%; */
   height: auto;
   margin: auto;
+}
+
+/** WORK SECTION */
+section.work h2 {
+  margin-bottom: 2rem;
 }
 
 section.work a {
@@ -265,9 +292,7 @@ section.work a:active {
 }
 
 section.work figure {
-  position: relative;
-  left: 1rem;
-  margin: 1rem 0;
+  margin: 1rem -1rem 1rem 1rem;
 
   border: solid var(--contrast-900);
   border-width: 0.0625rem 0 0.0625rem 0.0625rem;
