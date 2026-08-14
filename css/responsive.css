@@ -107,6 +107,10 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
+  section.work h2 {
+    margin: 1rem;
+  }
+
   section.work article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
