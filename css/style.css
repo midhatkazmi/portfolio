@@ -268,7 +268,8 @@ section.tools figure {
 }
 
 section.tools svg {
-  max-width: 4rem;
+  /* max-width: 4rem; */
+  max-width: 3rem;
   /* width: 100%; */
   height: auto;
   margin: auto;
