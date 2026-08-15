@@ -4,6 +4,8 @@
 - FOOTER
 - MAIN
 - SECTIONS
+  - LANDING SECTION
+  - TOOLS SECTION
   - WORK SECTION
 - HEADINGS
 - PARAGRAPHS
@@ -33,6 +35,7 @@
   padding: 0;
 
   fill: currentColor;
+  /* box-shadow: 0 0 0 1px magenta; */
 
   font-family: "General Sans", sans-serif;
   line-height: 1;
@@ -224,10 +227,12 @@ section {
   padding: 1rem;
 }
 
+/** LANDING SECTION */
 section.landing {
   min-height: calc(100vh - var(--header-height));
 }
 
+/** TOOLS SECTION */
 section.tools {
   color: var(--accent);
 
@@ -268,18 +273,12 @@ section.tools figure {
 }
 
 section.tools svg {
-  /* max-width: 4rem; */
   max-width: 3rem;
-  /* width: 100%; */
   height: auto;
   margin: auto;
 }
 
 /** WORK SECTION */
-section.work h2 {
-  margin-bottom: 2rem;
-}
-
 section.work a {
   display: block;
 }
@@ -299,9 +298,18 @@ section.work figure {
   border-width: 0.0625rem 0 0.0625rem 0.0625rem;
 }
 
+section.work img {
+  filter: grayscale(1);
+}
+
 a:hover figure,
 a:focus figure {
   border-color: currentColor;
+}
+
+a:hover img,
+a:focus img {
+  filter: none;
 }
 
 section.work h3 {
@@ -433,6 +441,7 @@ path {
 }
 
 /** CONTACT PAGE */
+/* deal with .contact etc */
 div.contact {
   font-weight: 500;
   text-align: center;

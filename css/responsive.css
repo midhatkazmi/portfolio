@@ -8,23 +8,22 @@
 2560 - 4K
 */
 
-/** 420px */
-@media screen and (min-width: 26.25em) {
-  div.tools {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/**
+- TOOLS GRID
+*/
 
-/*
+/**
 - BODY
 - HEADER
 - SECTIONS
+  - LANDING SECTION
+  - WORK SECTION
 - COLUMNS
 - CONTACT PAGE
 */
 /** 1024px */
 @media screen and (min-width: 64em) {
-  /* BODY */
+  /** BODY */
   body {
     min-height: 100vh;
     margin: 0;
@@ -92,23 +91,21 @@
     border: none;
   }
 
-  /* SECTIONS */
+  /** SECTIONS */
   section {
     max-width: 120rem;
     margin: auto;
     padding: 8rem;
   }
 
+  /** LANDING SECTION */
   section.landing {
     min-height: auto;
   }
 
-  div.tools {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  section.work h2 {
-    margin: 1rem;
+  /** WORK SECTION */
+  section.work {
+    padding: 8rem 0;
   }
 
   section.work article {
@@ -117,42 +114,75 @@
   }
 
   section.work figure {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
 
-    /* border-width: 0.0625rem 0.0625rem 0.0625rem 0; */
-    border-width: 0.0625rem;
+    border-width: 0.0625rem 0.0625rem 0.0625rem 0;
   }
 
-  /* COLUMNS */
+  /* create class name */
+  section.work article > div {
+    margin-right: 8rem;
+  }
+
+  /** COLUMNS */
   div.col2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* CONTACT PAGE */
+  /** CONTACT PAGE */
   section.contact h1 {
     margin-bottom: 0;
   }
 }
 
-/*
+/**
 - COLUMNS
 */
-/* 1280px */
+/** 1280px */
 @media screen and (min-width: 80em) {
-  /* COLUMNS */
+  /** COLUMNS */
   div.col2 {
     grid-template-columns: 2fr 1fr;
   }
 }
 
-/*
+/**
 SECTIONS
 */
-/* 1921px */
+/** 1921px */
 @media screen and (min-width: 120.0625em) {
-  /* SECTIONS */
+  /** SECTIONS */
   section.work figure {
     border-width: 0.0625rem;
+  }
+}
+
+/** TOOLS GRID */
+/** 420px */
+@media screen and (min-width: 26.25em) {
+  div.tools {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/** 528px */
+@media screen and (min-width: 33em) {
+  div.tools {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/** 742px */
+@media screen and (min-width: 46.375em) {
+  div.tools {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/** 1902px */
+@media screen and (min-width: 118.875em) {
+  div.tools {
+    grid-template-columns: repeat(12, 1fr);
   }
 }
